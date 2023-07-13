@@ -60,6 +60,25 @@ import VerificationCentered from 'views/auth/verification/VerificationCentered';
 import VerificationDefault from 'views/auth/verification/VerificationDefault';
 
 const routes = [
+	// --- Client ---
+	{
+		name: 'Clientes',
+		path: '/',
+		icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+		collapse: true,
+		items: [
+			{
+				name: 'clientes 1',
+				path: '/clients_1',
+				component: DashboardsDefault
+			},
+			{
+				name: 'Clientes 2',
+				path: '/clients_2',
+				component: DashboardsCarInterface
+			}
+		]
+	},
 	// --- Dashboards ---
 	{
 		name: 'Dashboards',
